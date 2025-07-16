@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namaste React</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="root">
+        <h1>Abhishek!</h1> <!--First the html page is read, then reads the first script and then react-dom, goes inside app.js and executes each and every line of code and at the end, it renders parent inside the root-->
+    </div>
+    <h2>Hi!</h2> <!--React executes only inside the root and nothing else. At the end "Hi!" as well-->
+
+    <!-- <script>
+        const heading = document.createElement("h1");
+        heading.innerHTML = "Hello world form Javascript!";
+
+        const root = document.getElementById("root");
+        root.appendChild(heading); //method which is there on every HTML node. heading goes as a child in the div id "root"
+    </script> -->
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> 
+    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+
+    <!-- React -->
+    <!-- <script>
+        const heading = React.createElement("h1", {}, "hello world"); //{} is an empty object, core react using react.dev docs.
+        //Put inside div id = root
+        //create a root
+        const root = ReactDOM.createRoot(document.getElementById("root")); //Created a root for the reatc library. A place where all react code will run
+        //Render the heading inside root
+        root.render(heading); //render method is used to render the react component -->
+    </script>
+
+    <script src="App.js"></script>
+       
+</body>
+</html>
+
+<!--React works in place what you make a root as. THat's the reason it's a library-->
