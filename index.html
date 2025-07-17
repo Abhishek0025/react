@@ -8,9 +8,9 @@
 </head>
 <body>
     <div id="root">
-        <h1>Abhishek!</h1> <!--First the html page is read, then reads the first script and then react-dom, goes inside app.js and executes each and every line of code and at the end, it renders parent inside the root-->
+        <h1>Not Rendered!</h1> <!--First the html page is read, then reads the first script and then react-dom, goes inside app.js and executes each and every line of code and at the end, it renders parent inside the root-->
     </div>
-    <h2>Hi!</h2> <!--React executes only inside the root and nothing else. At the end "Hi!" as well-->
+    <!-- <h2>Hi!</h2> React executes only inside the root and nothing else. At the end "Hi!" as well -->
 
     <!-- <script>
         const heading = document.createElement("h1");
@@ -19,8 +19,6 @@
         const root = document.getElementById("root");
         root.appendChild(heading); //method which is there on every HTML node. heading goes as a child in the div id "root"
     </script> -->
-    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script> 
-    <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
 
 
     <!-- React -->
@@ -31,9 +29,9 @@
         const root = ReactDOM.createRoot(document.getElementById("root")); //Created a root for the reatc library. A place where all react code will run
         //Render the heading inside root
         root.render(heading); //render method is used to render the react component -->
-    </script>
+    <!-- </script> -->
 
-    <script src="App.js"></script>
+    <script type="module" src="App.js"></script>
        
 </body>
 </html>
